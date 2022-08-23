@@ -1,0 +1,406 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>LAM7A-BLOGGS</title>
+    <link rel="icon" href="data:image/png;base64,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">
+<h1 class="blog-title ">Labzioui Bloggs مدونة الابزيوي </h1>
+
+<div id="container">	
+	
+	<div class="product-details">
+		
+	<h1>مقال تعريفي للهاكر بالدارجة</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+		
+			<p class="information">" هنا ستجد دروس أو موضوعات تخص القرصنة من الصفر حتى الإحتراف من قرصنة المواقع إلى قرصنة الحواسيب</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+   <span class="buy"><a href="blog2.html">Read More</a></span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="assets/imgs/clint-patterson-dYEuFB8KQJk-unsplash.jpg" alt="">
+	
+
+<div class="info">
+	<h2> Description</h2>
+	<ul>
+		<li><strong>Domain : </strong>Hacking </li>
+		<li><strong>Time for reading : </strong>15min</li>
+
+		
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+<div id="container">	
+	
+	<div class="product-details">
+		
+	<h1>أعظم الإختراعات التي ستغير تاريخ البشرية مستقبلا</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+		
+			<p class="information">" هنا ستجد كل مايخص ب التكنولوجيا دروس أو تقنيات تساعدك على معرفة كل أخبار التكنولوجيا
+                .</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+   <span class="buy"><a href="blog3.html">Read More</a></span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="assets/imgs/andrea-de-santis-zwd435-ewb4-unsplash.jpg" alt="">
+	
+
+<div class="info">
+	<h2> Description</h2>
+	<ul>
+		<li><strong>Domain : </strong>TECHNOLOGY </li>
+		<li><strong>Time for reading : </strong>5min</li>
+
+		
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="container">	
+	
+	<div class="product-details">
+		
+	<h1>كيفاش تعلم اللغة الإنجليزية بسهولة</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+		
+			<p class="information">" هنا ستجد كل ماله علاقة ب التعلم سوى تعلم اللغات للتواصل او لغات البرمجة او تعلم أي شيء يمكنني تعليمه لكم
+            </p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+   <span class="buy"><a href="blog1.html">Read More</a></span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="assets/imgs/clarissa-watson-jAebodq7oxk-unsplash.jpg" alt="">
+	
+
+<div class="info">
+	<h2> Description</h2>
+	<ul>
+		<li><strong>Domain : </strong>Education </li>
+		<li><strong>Time for reading : </strong>5min</li>
+
+		
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+<footer class="footer">
+	<p>©Copyright <span>ALI RCHAM  | IF YOU WANT TO MAKE GREAT WEBSITE CONTACT ME </span></p>
+	<div class="social-icons">
+		<a href="https://www.facebook.com/3LIIX1"><i class="fab fa-facebook"></i></a>
+
+		<a href="https://www.instagram.com/ali.rcham/?hl=en"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/channel/UCTmL1ko9enAJxrJP983T3EQ"><i class="fab fa-youtube"></i></a>
+
+	</div>
+
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<style>
+*{font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+.footer{
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+    left: 35px;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+  position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+
+
+
+.blog-title{
+    
+  text-align:center;
+  margin-bottom:50px;
+  margin-top:50px;
+  font-size: 5em;
+  font-family:cursive;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
