@@ -1,2 +1,3 @@
 # LAM7A_BLOGG
 PORTFOLIO WITH A BLOGG PAGE AND ARTICLES PAGE 
+![image](https://user-images.githubusercontent.com/100720880/186272764-91cf42d4-8b69-4081-8eeb-3877c7e38157.png)
